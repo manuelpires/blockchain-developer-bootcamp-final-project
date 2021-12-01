@@ -1,0 +1,42 @@
+.imagesSection {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 276px 276px;
+  grid-template-rows: 276px 276px;
+}
+
+.imageContainer {
+  max-width: 276px;
+  padding: 20px;
+}
+
+.imageContainer img {
+  border-radius: 20px;
+}
+
+@media (max-width: 1279px) {
+  .imagesSection {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .imagesSection {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+  }
+
+  .imageContainer {
+    max-width: 150px;
+    padding: 8px;
+  }
+
+  .imageContainer img {
+    border-radius: 8px;
+  }
+}

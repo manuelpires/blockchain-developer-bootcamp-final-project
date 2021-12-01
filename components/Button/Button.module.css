@@ -1,0 +1,90 @@
+.button {
+  cursor: pointer;
+  min-width: 200px;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.25rem;
+  background: none;
+  position: relative;
+  transition-duration: .2s;
+}
+
+.button:hover {
+  color: #60c657;
+  fill: #60c657;
+}
+
+.button:hover:before {
+  padding: 4px;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(left, #60c657, #35aee2);
+  -webkit-mask-composite: destination-out;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition-duration: .2s;
+}
+
+.roundButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+
+  background: #60c657;
+}
+
+.button:disabled {
+  color: #c3c5cb;
+  cursor: default;
+}
+
+.roundButton:disabled {
+  color: #c3c5cb;
+  cursor: default;
+  background-color: #2c2f36;
+}
+
+.button:disabled:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: #2c2f36;
+  -webkit-mask-composite: destination-out;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition-duration: .2s;
+}
+
+@media (max-width: 425px) {
+  .button {
+    font-size: 1rem;
+  }
+}

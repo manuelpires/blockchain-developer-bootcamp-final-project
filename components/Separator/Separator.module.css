@@ -1,0 +1,7 @@
+.separator {
+  width: 100%;
+  height: 1px;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  background: -webkit-linear-gradient(left, #60c657 30%, #35a2e2 70%);
+}
