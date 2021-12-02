@@ -19,7 +19,7 @@ const contract = new ethers.Contract(
 
 const isTokenIdValid = (tokenId: string) => {
   const id = parseInt(tokenId);
-  return /^\d+$/.test(tokenId) && id >= 0 && id <= 6666;
+  return /^\d+$/.test(tokenId) && id >= 0 && id <= 100;
 };
 
 const hasTokenBeenMinted = async (tokenId: string) => {
