@@ -27,6 +27,7 @@ const hasTokenBeenMinted = async (tokenId: string) => {
   return parseInt(tokenId) < supply.toNumber();
 };
 
+// Verifies that tokenId is valid and that the token has been minted
 const middleware =
   (handler: (req: NextApiRequest, res: NextApiResponse) => Promise<void>) =>
   async (req: NextApiRequest, res: NextApiResponse) => {
