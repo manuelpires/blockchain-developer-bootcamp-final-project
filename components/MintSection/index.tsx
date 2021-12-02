@@ -85,7 +85,7 @@ const MintSection = () => {
   }
 
   return (
-    <section className={styles.mintSection}>
+    <section className={styles.section}>
       <h2>
         <span className={styles.currentSupply}>{currentSupply}</span> / 100
         minted
@@ -94,7 +94,7 @@ const MintSection = () => {
         <Button isRound onClick={onLessAmountPress} disabled={isMinting}>
           <Image src={LessIcon} alt="less" width={40} height={40} />
         </Button>
-        <Button onClick={mint} disabled={isMinting}>
+        <Button onClick={mint} disabled={isMinting || currentSupply === 100}>
           {`Mint ${amount} - ${currentPrice} Ξ`}
         </Button>
         <Button isRound onClick={onMoreAmountPress} disabled={isMinting}>

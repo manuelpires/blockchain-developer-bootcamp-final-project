@@ -1,4 +1,4 @@
-.imagesSection {
+.container {
   width: 50%;
   display: grid;
   grid-template-columns: 276px 276px;
@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 1279px) {
-  .imagesSection {
+  .container {
     padding: 0;
     text-align: center;
     justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 767px) {
-  .imagesSection {
+  .container {
     grid-template-columns: 150px 150px;
     grid-template-rows: 150px 150px;
   }

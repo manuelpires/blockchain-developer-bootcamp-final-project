@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  max-width: 50%;
+}
+
+.title {
+  font-size: 8.5rem;
+  background: linear-gradient(to right, #60c657 30%, #35a2e2 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 1279px) {
+  .header {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 5rem;
+  }
+}
