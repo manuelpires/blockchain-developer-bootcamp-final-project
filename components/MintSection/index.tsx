@@ -91,13 +91,23 @@ const MintSection = () => {
         minted
       </h2>
       <div className={styles.buttonsContainer}>
-        <Button isRound onClick={onLessAmountPress} disabled={isMinting}>
+        <Button
+          isRound
+          onClick={onLessAmountPress}
+          disabled={isMinting || currentSupply === 100}
+        >
           <Image src={LessIcon} alt="less" width={40} height={40} />
         </Button>
+
         <Button onClick={mint} disabled={isMinting || currentSupply === 100}>
           {`Mint ${amount} - ${currentPrice} Ξ`}
         </Button>
-        <Button isRound onClick={onMoreAmountPress} disabled={isMinting}>
+
+        <Button
+          isRound
+          onClick={onMoreAmountPress}
+          disabled={isMinting || currentSupply === 100}
+        >
           <Image src={MoreIcon} alt="more" width={40} height={40} />
         </Button>
       </div>
