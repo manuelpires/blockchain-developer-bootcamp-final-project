@@ -101,7 +101,7 @@ You don't need to set up any environment varibales to compile or test the smart 
 
 ## Public Ethereum account for NFT certification 🎓
 
-`manuelpires.eth`
+`pires.eth`
 
 ## License 📜
 
