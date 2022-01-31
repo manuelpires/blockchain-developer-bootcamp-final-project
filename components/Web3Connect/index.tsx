@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import Button from "../Button";
 import useMetaMaskOnboarding from "../../hooks/useMetaMaskOnboarding";
 import { injected } from "../../connectors";
+import styles from "./Web3Connect.module.css";
 
 type Props = {
   triedToEagerConnect: boolean;
@@ -43,7 +44,7 @@ const Web3Connect = ({ triedToEagerConnect }: Props) => {
   }
 
   return (
-    <>
+    <section className={styles.section}>
       {isWeb3Available ? (
         <Button
           disabled={connecting}
@@ -65,7 +66,7 @@ const Web3Connect = ({ triedToEagerConnect }: Props) => {
       ) : (
         <Button onClick={startOnboarding}>Install MetaMask</Button>
       )}
-    </>
+    </section>
   );
 };
 

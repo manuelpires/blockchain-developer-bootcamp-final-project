@@ -19,7 +19,7 @@ const contract = new ethers.Contract(
 
 const isTokenIdValid = (tokenId: string) => {
   const id = parseInt(tokenId);
-  return /^\d+$/.test(tokenId) && id >= 0 && id <= 6666;
+  return /^\d+$/.test(tokenId) && id >= 0 && id <= 100;
 };
 
 const hasTokenBeenMinted = async (tokenId: string) => {
@@ -27,6 +27,7 @@ const hasTokenBeenMinted = async (tokenId: string) => {
   return parseInt(tokenId) < supply.toNumber();
 };
 
+// Verifies that tokenId is valid and that the token has been minted
 const middleware =
   (handler: (req: NextApiRequest, res: NextApiResponse) => Promise<void>) =>
   async (req: NextApiRequest, res: NextApiResponse) => {

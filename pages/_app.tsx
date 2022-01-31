@@ -16,7 +16,7 @@ const getLibrary = (provider: ExternalProvider | JsonRpcFetchFunc) => {
 const App = ({ Component, pageProps }: AppProps) => (
   <Web3ReactProvider getLibrary={getLibrary}>
     <Component {...pageProps} />
-    <ToastContainer theme="dark" />
+    <ToastContainer theme="dark" closeOnClick={false} />
   </Web3ReactProvider>
 );
 

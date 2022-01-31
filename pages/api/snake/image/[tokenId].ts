@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import middleware from "../../../../middleware";
 
+// GET /api/snake/image/:tokenId
 const handler = async (
   { query: { tokenId } }: NextApiRequest,
   res: NextApiResponse
