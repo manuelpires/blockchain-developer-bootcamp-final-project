@@ -1,4 +1,4 @@
-# Untitled Snakes Project 🐍
+# Blockchain Developer Bootcamp: Final Project 🐍
 
 ## About 📖
 
