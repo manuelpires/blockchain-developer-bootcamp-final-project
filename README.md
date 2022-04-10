@@ -89,7 +89,7 @@ You don't need to set up any environment varibales to compile or test the smart 
 
 ## Deployed dapp URL 🚀
 
-[https://untitled-snakes-project.vercel.app](https://untitled-snakes-project.vercel.app)
+[https://final-project.manuelpires.vercel.app/](https://final-project.manuelpires.vercel.app/)
 
 ## Verified smart contract on the Rinkeby testnet 🧪
 
